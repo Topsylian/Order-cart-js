@@ -24,13 +24,12 @@ select.addEventListener("change", () => {
 	}
 
 	function createCalender(days, choice) {
-		list.innerHTML = "";
+		list.innerHTML = '';
 		h1.textContent = choice;
 	
 		for (let i = 1; i <= days ; i++) {
 			const listDate = document.createElement("li");
 			listDate.textContent = i;
-			console.log(i);
 			list.appendChild(listDate);
 		}
 	}
