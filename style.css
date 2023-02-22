@@ -25,14 +25,15 @@ body {
   height: 100vh;
   padding: 3%;
   font-family: "Poppins", sans-serif;
-	background-color: var(--select-arrow);
+	background-color: white;
 	position: relative;
 }
 
 header {
 	width: 100%;
-	background-color: yellow;
-	padding: 5% 5%;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 1px 0px 8px 1px gray;
+	padding: 8% 8% 2%;
 	display: flex;
 	justify-content: flex-end;
 	position: absolute;
@@ -64,23 +65,25 @@ a > span.material-symbols-outlined {
 }
 
 #counter {
-	color: red;
+	color: #ffffff;
 	position: absolute;
 	height: 30px;
 	width: 30px;
-	padding: 15px;
-	right: -15px;
-	top: -15px;
+	padding: 20px;
+	right: -25px;
+	top: -25px;
 	font-size: 1rem;
-	background-color: black;
+	background-color: rgb(214, 17, 66);
 	border-radius: 100%;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Aclonica', sans-serif;
 }
 
 .container {
-	margin-top: 200px;
+	margin-top: 100px;
 	width: 100%;
 	padding: 2%;
 }
@@ -90,11 +93,11 @@ a > span.material-symbols-outlined {
 }
 
 .product-main-pic {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding: 10px;
 	background-color: #fff;
 	width: 100%;
-	height: 400px;
+	height: 300px;
 }
 
 .product-main-pic > img {
@@ -152,6 +155,17 @@ div.shake, button.shake {
 	transform: scale(0.9);
 }
 
+.product-details {
+	margin-top: 10px;
+	font-size: 0.8rem;
+	color: rgb(214, 17, 66);
+	font-family: 'Alconica', sans-serif;
+}
+
+.product-details > h1 {
+	font-family: 'Aclonica', sans-serif;
+}
+
 #cart-and-quantity {
 	display: flex;
 	gap: 2%;
@@ -168,12 +182,12 @@ button {
 	width: 80%;
 	position: relative;
   font-size: 1.1rem;
-  background-color: rgb(13, 12, 0);
-  border: 0px solid transparent;
+  background-color: transparent;
+  border: 1px solid black;
   cursor: pointer;
   padding: 1rem;
-  transition: all 0.85s ease-in-out;
-  color: yellow;
+  transition: all .5s ease-in-out;
+  color: black;
   border-radius: 0px 10px 10px 0px;
   outline: transparent;
 }
@@ -187,15 +201,19 @@ button::before {
   height: 100%;
   border-radius: 0px 10px 10px 0px;
   border: 2px solid transparent;
-  background: linear-gradient(#000000 0%, yellow 0%, yellow 100%, #000000 0%);
+  background: linear-gradient(#000000 0%, rgb(214, 17, 66) 0%, rgb(214, 17, 66) 100%, #000000 0%);
   transform: translate(-50%, -50%);
-  transition: all 500ms ease;
+	transition: all 0.85s ease-in-out;
   z-index: 1;
+}
+
+button:hover {
+	border: 1px solid transparent;
 }
 
 button:hover::before {
   width: 100%;
-	border: 2px solid yellow;
+	border: 2px solid transparent;
 }
 
 button span {
@@ -203,10 +221,11 @@ button span {
   position: relative;
   z-index: 2;
   font-family: "Poppins", sans-serif;
+	font-family: 'Aclonica', sans-serif;
 }
 
 button:hover span {
-  color: black;
+  color: white;
 }
 
 .custom-select {
@@ -215,10 +234,11 @@ button:hover span {
 	align-items: center;
 	justify-content: center;
 	outline: transparent;
-	border: 2px solid transparent;
+	border: 1px solid black;
 	padding: 0.5em 1em;
-	background-color: yellow;
+	background-color: transparent;
 	border-radius: 10px 0px 0px 10px;
+	font-family: 'Aclonica', sans-serif;
 }
 
 select {
