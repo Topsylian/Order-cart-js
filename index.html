@@ -15,10 +15,41 @@
 			href="https://fonts.googleapis.com/css2?family=Aclonica&family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap"
 			rel="stylesheet">
 		<script src="script.js" defer></script>
-		<title>Document</title>
+		<title>Product</title>
 	</head>
 
 	<body>
+		<a href="/cart.html">
+			<span class="material-symbols-outlined">
+				shopping_cart
+			</span>
+		</a>
+		<div class="container">
+			<div id="product-show-container">
+				<div class="product-main-pic">
+					<img src="/shoe-5.jpg" alt="">
+				</div>
+				<div class="product-other-pic">
+					<div data-toggle="1"><img src="/shoe-1.jpg" alt=""></div>
+					<div data-toggle="2"><img src="/shoe-2.jpg" alt=""></div>
+					<div data-toggle="3"><img src="/shoe-3.jpg" alt=""></div>
+					<div data-toggle="4"><img src="/shoe-6.jpg" alt=""></div>
+				</div>
+			</div>
+			<div id="cart-and-quantity">
+				<div class="quantities">
+					<div class="custom-select">
+						<select name="figure" id="figure">
+							<option value="one">1</option>
+							<option value="two">2</option>
+							<option value="three">3</option>
+						</select>
+					</div>
+				</div>
+				<button><span>Add To Cart</span></button>
+			</div>
+		</div>
+		<!--
 		<label for="months">select month: </label>
 		<select id="months">
 			<option value="january">
@@ -60,9 +91,7 @@
 		</select>
 		<h1></h1>
 		<br>
-		<ul></ul>
-
-
+		<ul></ul>-->
 
 
 	</body>

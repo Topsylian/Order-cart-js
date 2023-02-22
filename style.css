@@ -1,51 +1,189 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
   list-style: none;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
 }
 
 body {
-	overflow-x: hidden;
-	font-size: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	padding: 5%;
-	font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 5%;
+  font-family: "Poppins", sans-serif;
+	background-color: var(--select-arrow);
 }
 
-ul {
-	list-style-type: none;
-	overflow: hidden;
+#product-show-container {
+	margin-bottom: 20px;
+}
+
+.product-main-pic {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #fff;
 	width: 100%;
-	padding: 10px;
-	border: 1px solid;
-	border-radius: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1%;
+	height: 400px;
 }
 
-li {
-	color: black;
-	border-radius: 10px;
-	border: 2px solid;
-	width: 13%;
-	text-align: center;
-	margin-bottom: 1%;
-	font-family: 'Cinzel', serif;
+.product-main-pic > img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.product-other-pic {
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	background-color: transparent;
+	gap: 1%;
+	transition: .85s ease-in-out;
+}
+
+div.shake, button.shake {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: 60s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.product-other-pic > div{
+	width: 24%;
+	background-color: #fff;
+	border-radius: 10px;
 	padding: 10px;
+	transition: all .5s ease-in-out;
+}
+
+.product-other-pic > div > img {
+	width: 100%;
+	height: 100px;
+	object-fit: contain;
+}
+
+.product-other-pic > div:hover {
+	transform: scale(0.9);
+}
+
+#cart-and-quantity {
+	display: flex;
+	gap: 2%;
+}
+
+.quantities {
+	display: flex;
+	border: 0px solid;
+	width: 30%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+a  {
+	text-decoration: none;
+	color: black;
+}
+
+a > span {
+	font-size: 20px;
+}
+
+button {
+	width: 80%;
+	position: relative;
+  font-size: 1.1rem;
+  background-color: rgb(13, 12, 0);
+  border: 0px solid transparent;
+  cursor: pointer;
+  padding: 1rem;
+  transition: all 0.85s ease-in-out;
+  color: yellow;
+  border-radius: 0px 10px 10px 0px;
+  outline: transparent;
+}
+
+button::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid transparent;
+  background: linear-gradient(#000000 0%, yellow 0%, yellow 100%, #000000 0%);
+  transform: translate(-50%, -50%);
+  transition: all 500ms ease;
+  z-index: 1;
+}
+
+button:hover::before {
+  width: 100%;
+	border: 2px solid white;
+}
+
+button span {
+  transition: all 300ms ease-in-out;
+  position: relative;
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover span {
+  color: black;
+}
+
+.custom-select {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: transparent;
+	border: 2px solid transparent;
+	padding: 0.5em 1em;
+	background-color: yellow;
+	border-radius: 10px 0px 0px 10px;
 }
 
 select {
-	width: 200px;
-	margin-bottom: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	outline: transparent;
+	font-size: 1.3rem;
 }
+
+
+
+
