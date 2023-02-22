@@ -23,9 +23,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 5%;
+  padding: 3%;
   font-family: "Poppins", sans-serif;
 	background-color: var(--select-arrow);
+}
+
+.container {
+	width: 100%;
+	padding: 2%;
 }
 
 #product-show-container {
