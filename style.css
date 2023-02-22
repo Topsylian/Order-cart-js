@@ -56,11 +56,10 @@ a:hover {
 }
 
 a > span {
-	font-size: 1.5em;
+	font-size: 1.1rem;
 }
 
 a > span.material-symbols-outlined {
-	font-size: 2em;
 	position: relative;
 }
 
@@ -71,7 +70,7 @@ a > span.material-symbols-outlined {
 	width: 30px;
 	padding: 20px;
 	right: -25px;
-	top: -25px;
+	top: -28px;
 	font-size: 1rem;
 	background-color: rgb(214, 17, 66);
 	border-radius: 100%;
@@ -79,7 +78,6 @@ a > span.material-symbols-outlined {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Aclonica', sans-serif;
 }
 
 .container {
@@ -181,7 +179,7 @@ div.shake, button.shake {
 button {
 	width: 80%;
 	position: relative;
-  font-size: 1.1rem;
+  font-size: 1rem;
   background-color: transparent;
   border: 1px solid black;
   cursor: pointer;
@@ -221,7 +219,6 @@ button span {
   position: relative;
   z-index: 2;
   font-family: "Poppins", sans-serif;
-	font-family: 'Aclonica', sans-serif;
 }
 
 button:hover span {
@@ -238,7 +235,6 @@ button:hover span {
 	padding: 0.5em 1em;
 	background-color: transparent;
 	border-radius: 10px 0px 0px 10px;
-	font-family: 'Aclonica', sans-serif;
 }
 
 select {
@@ -249,7 +245,7 @@ select {
 	background-color: transparent;
 	border: none;
 	outline: transparent;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 }
 
 
