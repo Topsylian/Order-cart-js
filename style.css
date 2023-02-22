@@ -26,9 +26,61 @@ body {
   padding: 3%;
   font-family: "Poppins", sans-serif;
 	background-color: var(--select-arrow);
+	position: relative;
+}
+
+header {
+	width: 100%;
+	background-color: yellow;
+	padding: 5% 5%;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+a  {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+	color: var(--select-border);
+}
+
+a > span {
+	font-size: 1.5em;
+}
+
+a > span.material-symbols-outlined {
+	font-size: 2em;
+	position: relative;
+}
+
+#counter {
+	color: red;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	padding: 15px;
+	right: -15px;
+	top: -15px;
+	font-size: 1rem;
+	background-color: black;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container {
+	margin-top: 200px;
 	width: 100%;
 	padding: 2%;
 }
@@ -110,15 +162,6 @@ div.shake, button.shake {
 	border: 0px solid;
 	width: 30%;
   border-radius: 10px 0px 0px 10px;
-}
-
-a  {
-	text-decoration: none;
-	color: black;
-}
-
-a > span {
-	font-size: 20px;
 }
 
 button {

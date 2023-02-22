@@ -19,11 +19,15 @@
 	</head>
 
 	<body>
-		<a href="/cart.html">
-			<span class="material-symbols-outlined">
-				shopping_cart
-			</span>
-		</a>
+		<header>
+			<a href="/cart.html">
+				<span>cart</span>
+				<span class="material-symbols-outlined">
+					shopping_cart
+					<span id="counter"></span>
+				</span>
+			</a>
+		</header>
 		<div class="container">
 			<div id="product-show-container">
 				<div class="product-main-pic">
@@ -40,9 +44,9 @@
 				<div class="quantities">
 					<div class="custom-select">
 						<select name="figure" id="figure">
-							<option value="one">1</option>
-							<option value="two">2</option>
-							<option value="three">3</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
 						</select>
 					</div>
 				</div>

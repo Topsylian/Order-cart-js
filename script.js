@@ -5,6 +5,11 @@ const html = document.querySelector("html");
 const list = document.querySelector("ul");
 const showImg = document.querySelector("div.product-main-pic");
 const otherImg = document.querySelectorAll("div.product-other-pic > div");
+const counter = document.querySelector("#counter");
+
+btn.addEventListener("click", () => {
+	counter.textContent = select.value;
+});
 
 for (let i = 0; i < otherImg.length; i++) {
 	otherImg[i].addEventListener("click", () => {
